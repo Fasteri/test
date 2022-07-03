@@ -160,11 +160,21 @@ if (d == "") {
   alert("Укажите вашу дату рождения");
   return false;
 }
+
+var ee = document.forms["myForm"]["tel"].value.length;
+if (ee == 17){
+}
+else {
+  alert("Неверный номер телефона");
+  return false;
+}
+
 var e = document.forms["myForm"]["tel"].value;
 if (e == "") {
   alert("Укажите ваш телефон");
   return false;
 }
+
 var f = document.forms["myForm"]["city"].value;
 if (f == "") {
   alert("Укажите ваш город");
