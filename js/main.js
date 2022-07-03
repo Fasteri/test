@@ -186,6 +186,12 @@ if ( /^[0-9.]+$/.test(d)) {}
 
 
 
+var e = document.forms["myForm"]["tel"].value;
+if (e == "") {
+  alert("Укажите ваш телефон");
+  return false;
+}
+
 var ee = document.forms["myForm"]["tel"].value.length;
 if (ee == 17){
 }
@@ -193,15 +199,6 @@ else {
   alert("Неверный номер телефона");
   return false;
 }
-
-
-
-var e = document.forms["myForm"]["tel"].value;
-if (e == "") {
-  alert("Укажите ваш телефон");
-  return false;
-}
-
 
 
 
