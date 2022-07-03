@@ -129,7 +129,6 @@ document.getElementById('999').onclick = function (evt) {
 
 
 function validate() {
-  var art = 0;
   let z = document.forms['myForm']["first_name"].value;
 if (z == "") {
   alert("Укажите ваше имя");
@@ -141,8 +140,19 @@ if (b == "") {
   return false;
 }
 var с = document.forms["myForm"]["email"].value;
+var inputEmail = document.getElementById("111");
+var emailVal = inputEmail.value;
 if (с == "") {
   alert("Укажите ваш Е-майл");
+  return false;
+}
+function validateEmail(email) {
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
+if(!validateEmail(emailVal)) {
+  console.log('email not valid');
+  alert("Неверный Е-майл");
   return false;
 }
 var d = document.forms["myForm"]["age"].value;
@@ -171,7 +181,7 @@ bg.classList.add('bg');
 
 var aler = document.getElementById("322");
 aler.style.display = aler.style.display = 'block';
- art = 1;
+
 
 
 

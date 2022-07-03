@@ -57,7 +57,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit; }
 
-  
 p:hover {
   cursor: default; }
 
@@ -67,7 +66,7 @@ p:hover {
   font-weight: 400; }
 
 body {
-  background: url(../img/bg.png) center center repeat;
+  background: url(/img/image\ 2.png) center center repeat;
   padding-top: 30px; }
 
 .bg {
@@ -203,7 +202,4 @@ h1 {
     content: "";
     width: 15px;
     height: 15px;
-    background: url(img/icons/free-png.ru-39.png) center center/cover no-repeat; }
-=======
-/*--------------------*/
-
+    background: url(/img/icons/free-png.ru-39.png) center center/cover no-repeat; }
