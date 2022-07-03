@@ -69,7 +69,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
   });
   
-  var input = document.querySelectorAll('#mydata')[0];
+  var input = document.getElementById('age');
  
   var dateInputMask = function dateInputMask(elm) {
    
@@ -96,7 +96,6 @@ window.addEventListener("DOMContentLoaded", function() {
       }}
     });
   };
-   
   dateInputMask(input);
 });
 
@@ -121,7 +120,7 @@ if (typeof el.innerText !== 'undefined') {
 
 
 document.getElementById('999').onclick = function (evt) {
-  // Отменяем переход по ссылке
+
   evt.preventDefault();
   validate();
 
@@ -130,15 +129,31 @@ document.getElementById('999').onclick = function (evt) {
 
 function validate() {
   let z = document.forms['myForm']["first_name"].value;
+  if ( /^[a-zA-Zа-яА-ЯёЁІіЇїЄєҐґ']+$/.test(z)) {}
+   else{
+    alert ("Некорректное имя");
+    return false;
+  }
 if (z == "") {
   alert("Укажите ваше имя");
   return false;
 }
+
+
+
 var b = document.forms["myForm"]["last_name"].value;
+if ( /^[a-zA-Zа-яА-ЯёЁІіЇїЄєҐґ']+$/.test(b)) {}
+   else{
+    alert ("Некорректная фамилия");
+    return false;
+  }
 if (b == "") {
   alert("Укажите вашу фамилию");
   return false;
 }
+
+
+
 var с = document.forms["myForm"]["email"].value;
 var inputEmail = document.getElementById("111");
 var emailVal = inputEmail.value;
@@ -155,11 +170,16 @@ if(!validateEmail(emailVal)) {
   alert("Неверный Е-майл");
   return false;
 }
+
+
+
 var d = document.forms["myForm"]["age"].value;
 if (d == "") {
   alert("Укажите вашу дату рождения");
   return false;
 }
+
+
 
 var ee = document.forms["myForm"]["tel"].value.length;
 if (ee == 17){
@@ -169,17 +189,31 @@ else {
   return false;
 }
 
+
+
 var e = document.forms["myForm"]["tel"].value;
 if (e == "") {
   alert("Укажите ваш телефон");
   return false;
 }
 
+
+
+
 var f = document.forms["myForm"]["city"].value;
+if ( /^[a-zA-Zа-яА-ЯёЁІіЇїЄєҐґ']+$/.test(f)) {}
+   else{
+    alert ("Некорректное название города");
+    return false;
+  }
 if (f == "") {
   alert("Укажите ваш город");
   return false;
 }
+
+
+
+
 var g = document.forms["myForm"]["document"].value;
 if (g== "") {
   alert("Выберите файл портофолио");
