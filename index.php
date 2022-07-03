@@ -24,7 +24,7 @@ print_r($_POST);
 <div  id="bg"></div>
 <div class="container">
 	<div class="success" id="322">
-		<img src="img/icons/galka.png" alt="" class="success__img">
+		<img src="../img/icons/galka.png" alt="" class="success__img">
 		<p>Успешно!</p>
 		<p>Ваша заявка успешно принята!</p>
 		<a href='#' id="777" class="success__btn"><span>OK</span></a>
