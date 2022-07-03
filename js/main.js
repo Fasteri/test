@@ -129,28 +129,28 @@ document.getElementById('999').onclick = function (evt) {
 
 function validate() {
   let z = document.forms['myForm']["first_name"].value;
-  if ( /^[a-zA-Zа-яА-ЯёЁІіЇїЄєҐґ']+$/.test(z)) {}
-   else{
-    alert ("Некорректное имя");
-    return false;
-  }
 if (z == "") {
   alert("Укажите ваше имя");
   return false;
+}
+if ( /^[a-zA-Zа-яА-ЯёЁІіЇїЄєҐґ']+$/.test(z)) {}
+else{
+ alert ("Некорректное имя");
+ return false;
 }
 
 
 
 var b = document.forms["myForm"]["last_name"].value;
+if (b == "") {
+  alert("Укажите вашу фамилию");
+  return false;
+}
 if ( /^[a-zA-Zа-яА-ЯёЁІіЇїЄєҐґ']+$/.test(b)) {}
    else{
     alert ("Некорректная фамилия");
     return false;
   }
-if (b == "") {
-  alert("Укажите вашу фамилию");
-  return false;
-}
 
 
 
@@ -201,15 +201,15 @@ if (e == "") {
 
 
 var f = document.forms["myForm"]["city"].value;
+if (f == "") {
+  alert("Укажите ваш город");
+  return false;
+}
 if ( /^[a-zA-Zа-яА-ЯёЁІіЇїЄєҐґ']+$/.test(f)) {}
    else{
     alert ("Некорректное название города");
     return false;
   }
-if (f == "") {
-  alert("Укажите ваш город");
-  return false;
-}
 
 
 
