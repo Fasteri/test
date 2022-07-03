@@ -178,6 +178,11 @@ if (d == "") {
   alert("Укажите вашу дату рождения");
   return false;
 }
+if ( /^[0-9.]+$/.test(d)) {}
+   else{
+    alert ("Некорректная дата");
+    return false;
+  }
 
 
 
