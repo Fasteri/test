@@ -227,6 +227,7 @@ function check(){
     if (a == ""){
       sum++;
       total++;
+      b.classList.remove('green');
       c.style.display = c.style.display = 'block';
       b.classList.add('input_error');
       d.style.display = d.style.display = 'none';
