@@ -69,11 +69,14 @@ body {
   background: url(../img/bgg.jpg) center center repeat;
   padding-top: 30px; }
 
+.bg_stop {
+  overflow: hidden; }
+
 .bg {
   position: absolute;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: rgba(133, 131, 131, 0.726);
   z-index: 100; }
 
@@ -159,6 +162,10 @@ body {
       top: 50%;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
+    .contact_form .item.green {
+      border-color: green; }
+  .contact_form .input_error {
+    border: 1px solid red; }
 
 h1 {
   padding: 35px 0 0 105px;
@@ -203,3 +210,23 @@ h1 {
     width: 15px;
     height: 15px;
     background: url(../img/icons/free-png.ru-39.png) center center/cover no-repeat; }
+
+.error {
+  display: none;
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  right: -10px;
+  bottom: 50%;
+  -webkit-transform: translate(100%, 50%);
+          transform: translate(100%, 50%); }
+
+.request {
+  display: none;
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  right: -10px;
+  bottom: 50%;
+  -webkit-transform: translate(100%, 50%);
+          transform: translate(100%, 50%); }
